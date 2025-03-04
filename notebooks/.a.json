@@ -1,0 +1,40 @@
+{
+	"text": {
+		"1": {
+			"mcq": "What is the primary function of a sensor in a measurement system?",
+			"options": {"a": "To convert electrical energy into mechanical energy",
+       "b": "To collect information regarding physical parameters", 
+       "c": "To amplify the output signal", 
+       "d": "To store data for future analysis"},
+			"correct": "b"
+		},
+		"2": {"mcq": "Which of the following is NOT a type of transducer mentioned in the text?",
+     "options": {"a": "Potentiometer", "b": "Thermocouple", "c": "Photovoltaic transducer", "d": "Resistor"}, "correct": "d"},
+		"3": {
+			"mcq": "What does the term 'transduction' refer to?",
+			"options": {"a": "The process of measuring physical quantities", "b": "The conversion of energy from one form to another", "c": "The amplification of electrical signals", "d": "The storage of sensor data"},
+			"correct": "b"
+		},
+		"4": {"mcq": "Which type of transducer converts a change in one form of energy into another?", "options": {"a": "Sensor", "b": "Transducer", "c": "Amplifier", "d": "Controller"}, "correct": "b"},
+		"5": {
+			"mcq": "What is the primary characteristic of an analog transducer?",
+			"options": {"a": "It produces a digital output", "b": "It changes the input quantity into a continuous function", "c": "It requires an external power source", "d": "It is only used for temperature measurement"},
+			"correct": "b"
+		},
+		"6": {"mcq": "Which of the following is a primary transducer?", "options": {"a": "Strain gauge", "b": "Thermocouple", "c": "Bourdon tube", "d": "Load cell"}, "correct": "c"},
+		"7": {"mcq": "What is the purpose of a load cell?", "options": {"a": "To measure temperature", "b": "To measure pressure", "c": "To convert force or load into an electrical signal", "d": "To measure liquid levels"}, "correct": "c"},
+		"8": {"mcq": "Which type of sensor is used to measure angular velocity?", "options": {"a": "Tachogenerator", "b": "Strain gauge", "c": "LVDT", "d": "Photodiode"}, "correct": "a"},
+		"9": {
+			"mcq": "What is the main advantage of piezoelectric sensors?",
+			"options": {"a": "They require external power", "b": "They are self-generating and require no external power", "c": "They are only used for temperature measurement", "d": "They are not sensitive to force"},
+			"correct": "b"
+		},
+		"10": {
+			"mcq": "What does the term 'sensitivity' refer to in the context of sensors?",
+			"options": {"a": "The ability to measure a wide range of inputs", "b": "The ability to respond to changes in the measured quantity", "c": "The accuracy of the sensor", "d": "The physical size of the sensor"},
+			"correct": "b"
+		}
+	},
+	"number": 10,
+	"response_json": "{\n            \"1\": {\n                \"mcq\": \"multiple choice question\",\n                \"options\": {\n                    \"a\": \"choice here\",\n                    \"b\": \"choice here\",\n                    \"c\": \"choice here\",\n                    \"d\": \"choice here\",\n                },\n                \"correct\": \"correct answer\",\n            },\n            \"2\": {\n                \"mcq\": \"multiple choice question\",\n                \"options\": {\n                    \"a\": \"choice here\",\n                    \"b\": \"choice here\",\n                    \"c\": \"choice here\",\n                    \"d\": \"choice here\",\n                },\n                \"correct\": \"correct answer\",\n            },\n            \"3\": {\n                \"mcq\": \"multiple choice question\",\n                \"options\": {\n                    \"a\": \"choice here\",\n                    \"b\": \"choice here\",\n                    \"c\": \"choice here\",\n                    \"d\": \"choice here\",\n                },\n                \"correct\": \"correct answer\",\n            },\n      }"
+}
