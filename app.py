@@ -1,5 +1,4 @@
-#generate a streamlit app to take in a bunch of files as input as well as how many mcqs and then generate a quiz based on the files
-
+import os
 import streamlit as st
 from test_preparer.QuestionGenerator import QuestionGenerator
 
@@ -15,15 +14,40 @@ if __name__ == "__main__":
                         f.write(file.getbuffer())
                   files_path.append(file.name)
 
+            mcq_inputs = []
+            subjective_inputs = []
+            
+            st.write("Specify number of questions for each document:")
+            for i, file in enumerate(uploaded_files):
+                  col1, col2 = st.columns(2)
+                  with col1:
+                        mcq = st.number_input(
+                              f"MCQs for {file.name}",
+                              min_value=1,
+                              max_value=100,
+                              value=10,
+                              key=f"mcq_{i}"
+                        )
+                        mcq_inputs.append(mcq)
+                  with col2:
+                        subj = st.number_input(
+                              f"Subjective for {file.name}",
+                              min_value=0,
+                              max_value=50,
+                              value=5,
+                              key=f"subj_{i}"
+                        )
+                        subjective_inputs.append(subj)
 
-      number_of_mcqs = st.number_input("Enter the number of MCQs", min_value=1, max_value=100, value=10)
-
-      if st.button("Generate Quiz"):
-            if uploaded_files:
+            if st.button("Generate Quiz"):
                   st.write("Generating quiz...")
                   question_generator = QuestionGenerator()
-                  quiz = question_generator.generate(files_path, number_of_mcqs)
+                  quiz = question_generator.generate(files_path, mcq_inputs, subjective_inputs)
                   st.write(quiz)
-            else:
-                  st.write("Please upload some files first")
+                  st.success("Quiz generated successfully!")
+                  st.balloons()
+                  for file in files_path:
+                        os.remove(file)
+      else:
+            st.write("Please upload some files first")
 
