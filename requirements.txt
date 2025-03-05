@@ -5,10 +5,6 @@ langchain-openai
 langchain-core
 langchain-community
 langchain-huggingface
-tqdm
 streamlit
-numpy
-pandas
-ipykernel
 pypdf
 python-pptx
